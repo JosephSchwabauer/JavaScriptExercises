@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+</head>
+<body>
+  <canvas id="canvas" width= "200" height= "200"></canvas>
+<script>
+   var canvas = document.getElementById("canvas");
+   
+   var head = canvas.getContext("2d");
+   var neck = canvas.getContext("2d");
+   var arms = canvas.getContext("2d");
+   
+       head.fillRect(0,0,50,100);
+       head.fillStyle = "cyan";
+       neck.fillRect(50,0,50,100);
+       neck.fillStyle = "chocolate";
+       arms.fillRect(100,0,50,100);
+       arms.fillStyle = "orange";
+       
+       
+  </script>
+</body>
+</html>
