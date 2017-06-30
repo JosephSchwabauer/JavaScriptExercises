@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stickman is the spot!</title>
+</head>
+<body>
+  <canvas id="canvas" width= "200" height= "200"></canvas>
+<script>
+   var canvas = document.getElementById("canvas");
+   var ctx = canvas.getContext("2d");
+   ctx.strokeStyle = "orange";
+   ctx.lineWidth = 4;
+   ctx.strokeRect (70, 70, 30, 30); //head//
+   ctx.beginPath();
+   ctx.moveTo(85,100);
+   ctx.lineTo(85, 120);  //neck//
+   ctx.moveTo(85, 120);  
+   ctx.lineTo(60, 100);  //left arm//
+   ctx.moveTo(85, 120);
+   ctx.lineTo(110, 100); //right arm//
+   ctx.moveTo(85, 120);
+   ctx.lineTo(85, 170); //torso//
+   ctx.moveTo(85, 170);
+   ctx.lineTo(60, 190); //left leg//
+   ctx.moveTo(85, 170);
+   ctx.lineTo(110, 190); //right leg//
+   
+   ctx.stroke();
+   
+   
+   
+   
+         
+  </script>
+</body>
+</html>
